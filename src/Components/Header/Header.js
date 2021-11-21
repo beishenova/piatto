@@ -36,9 +36,7 @@ export default function Header() {
                         className={classes.menuButton}
                         color="black"
                         aria-label="menu"
-                    >
-                        <MenuIcon />
-                    </IconButton>
+                    ></IconButton>
                     <Typography variant="h6" className={classes.title}>
                         Piatto
                     </Typography>

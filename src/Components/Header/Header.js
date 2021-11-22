@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import { authContext, useAuth } from '../../contexts/AuthContext';
+import { authContext } from '../../contexts/AuthContext';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -64,7 +64,6 @@ export default function Header() {
               Sign up
             </Button>
           )}
-          {/* <Button style={{ color: 'white' }}>Login</Button> */}
         </Toolbar>
       </AppBar>
     </div>

@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { authContext } from '../../contexts/AuthContext';
+import Sidebar from '../Sidebar/Sidebar';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -43,7 +44,8 @@ export default function Header() {
             color="black"
             aria-label="menu"
           >
-            <MenuIcon />
+            <Sidebar pageWrapId={'page-wrap'} outerContainerId={'App'} />
+            {/* <MenuIcon /> */}
           </IconButton>
           <Typography variant="h6" className={classes.title}>
             Piatto

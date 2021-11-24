@@ -1,3 +1,94 @@
 {
-  "meals":[]
+    "meals": [
+        {
+            "id": "1",
+            "title": "Pasta,Curry",
+            "description": "Spicy Arrabiata Penne",
+            "price": 2000,
+            "category": "Vegetarian",
+            "area": "Italian",
+            "image": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg"
+        },
+        {
+            "id": "2",
+            "title": "Pasta,Curry",
+            "description": "Spicy Arrabiata Penne",
+            "price": 2000,
+            "category": "Vegetarian",
+            "area": "Italian",
+            "image": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg"
+        },
+        {
+            "id": "3",
+            "title": "Pasta,Curry",
+            "description": "Spicy Arrabiata Penne",
+            "price": 2000,
+            "category": "Vegetarian",
+            "area": "Italian",
+            "image": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg"
+        },
+        {
+            "id": "4",
+            "title": "Pasta,Curry",
+            "description": "Spicy Arrabiata Penne",
+            "price": 2000,
+            "category": "Vegetarian",
+            "area": "Italian",
+            "image": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg"
+        },
+        {
+            "id": "5",
+            "title": "Pasta,Curry",
+            "description": "Spicy Arrabiata Penne",
+            "price": 2000,
+            "category": "Vegetarian",
+            "area": "Italian",
+            "image": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg"
+        },
+        {
+            "id": "6",
+            "title": "Pasta,Curry",
+            "description": "Spicy Arrabiata Penne",
+            "price": 2000,
+            "category": "Vegetarian",
+            "area": "Italian",
+            "image": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg"
+        },
+        {
+            "id": "7",
+            "title": "Pasta,Curry",
+            "description": "Spicy Arrabiata Penne",
+            "price": 2000,
+            "category": "Vegetarian",
+            "area": "Italian",
+            "image": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg"
+        },
+        {
+            "id": "8",
+            "title": "Pasta,Curry",
+            "description": "Spicy Arrabiata Penne",
+            "price": 2000,
+            "category": "Vegetarian",
+            "area": "Italian",
+            "image": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg"
+        },
+        {
+            "id": "9",
+            "title": "Pasta,Curry",
+            "description": "Spicy Arrabiata Penne",
+            "price": 2000,
+            "category": "Vegetarian",
+            "area": "Italian",
+            "image": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg"
+        },
+        {
+            "id": "10",
+            "title": "Pasta,Curry",
+            "description": "Spicy Arrabiata Penne",
+            "price": 2000,
+            "category": "Vegetarian",
+            "area": "Italian",
+            "image": "https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg"
+        }
+    ]
 }

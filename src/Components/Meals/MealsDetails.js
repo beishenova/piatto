@@ -1,3 +1,4 @@
+// <<<<<<< aisha
 import { Grid, makeStyles, Paper } from '@material-ui/core';
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router';
@@ -112,3 +113,6 @@ const MealsDetails = () => {
 };
 
 export default MealsDetails;
+// =======
+
+// >>>>>>> tansuu

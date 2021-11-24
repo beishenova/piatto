@@ -4,10 +4,13 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import SearchIcon from '@material-ui/icons/Search';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import { authContext } from '../../contexts/AuthContext';
 import Sidebar from '../Sidebar/Sidebar';
+import { useMeals } from '../../contexts/MealsContent';
+import { ClickAwayListener, InputBase } from '@material-ui/core';
+import { Search } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,11 +28,18 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Header() {
   const classes = useStyles();
+  const [searchActive, setSearchActive] = React.useState(false);
+  const { fetchSearchMeals } = useMeals(); 
+  console.log(fetchSearchMeals, 'hello')
+  const { registerUser, user, logOut } = useContext(authContext); 
+  
 
-  const { registerUser, user, logOut } = useContext(authContext);
-  console.log(registerUser);
-  console.log(user);
-  console.log(logOut);
+
+  const handleSearch = (e) => {
+    fetchSearchMeals(e.target.value);
+  };
+
+
 
   return (
     <div className={classes.root}>
@@ -50,6 +60,29 @@ export default function Header() {
           <Typography variant="h6" className={classes.title}>
             Piatto
           </Typography>
+          <ClickAwayListener onClickAway={() => setSearchActive(false)}>
+            <div className={classes.search}>
+              <div className={classes.searchIcon}>
+                <SearchIcon />
+              </div>
+              <InputBase
+                onFocus={() => setSearchActive(true)}
+                placeholder="Search…"
+                classes={{
+                  root: classes.inputRoot,
+                  input: classes.inputInput,
+                }}
+                onChange={handleSearch}
+                inputProps={{ 'aria-label': 'search' }}
+              />
+              {searchActive && (
+                <div className={classes.searchBox}>
+                  <Search />
+                </div>
+              )}
+            </div>
+          </ClickAwayListener>
+          <div className={classes.grow} />
           {user ? (
             <>
               <p>{user.email}</p>

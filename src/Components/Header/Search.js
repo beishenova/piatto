@@ -1,5 +1,5 @@
 import React from 'react';
-import { useProducts } from '../../contexts/ProductsContext';
+import { useProducts } from '../../contexts/MealsContext';
 import './Search.css';
 
 const Search = () => {

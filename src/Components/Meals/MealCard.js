@@ -12,7 +12,6 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { Shop } from '@material-ui/icons';
 import MyLink from '../../shared/MyLink';
 import { useProducts } from '../../contexts/ProductsContext';
-import { checkItemInCart } from '../../utils/check-item-cart';
 
 const useStyles = makeStyles({
   root: {

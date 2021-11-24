@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
-import { useProducts } from '../../contexts/MealsContext';
-import { calcTotalPrice } from '../../utils/calc';
+import React, { useEffect } from "react";
+import { useProducts } from "../../contexts/MealsContext";
+import { calcTotalPrice } from "../../utils/calc";
 
 const Cart = () => {
     const { cart, getCart, changeMealCount } = useProducts();
@@ -22,15 +22,20 @@ const Cart = () => {
                                 <th>Image</th>
                                 <th>Title</th>
                                 <th>Price</th>
-                                <th>Count</th>
-                                <th>Sub Total</th>
+                                <th>Category</th>
+                                <th>Area</th>
+                                <th>Description</th>
                             </tr>
                         </thead>
                         <tbody>
                             {cart.meals.map((item) => (
                                 <tr>
                                     <td>
-                                        <img src={item.meal.image} alt="" style={{ width: '50px' }} />
+                                        <img
+                                            src={item.meal.image}
+                                            alt=""
+                                            style={{ width: "50px" }}
+                                        />
                                     </td>
                                     <td>{item.meal.title}</td>
                                     <td>{item.meal.price}</td>
@@ -38,16 +43,18 @@ const Cart = () => {
                                         <input
                                             type="number"
                                             value={item.count}
-                                            onChange={(e) => handleCountChange(e.target, item.meal.id)}
+                                            onChange={(e) =>
+                                                handleCountChange(
+                                                    e.target,
+                                                    item.meal.id
+                                                )
+                                            }
                                         />
                                     </td>
-                                    <td>{item.subPrice}</td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
-                    <h4>Total: {calcTotalPrice(cart.meals)}</h4>
-                    <button>Оплатить</button>
                 </>
             ) : (
                 <h1>Cart is empty</h1>

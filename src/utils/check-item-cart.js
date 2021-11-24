@@ -1,0 +1,1 @@
+export const checkItemInFavorite = (favorite, mealId) => favorite.some(({ meal }) => meal.id === mealId);

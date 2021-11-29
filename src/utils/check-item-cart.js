@@ -1,1 +1,1 @@
-export const checkItemInCart = (cart, productId) => cart.some(({ product }) => product.id === productId);
+export const checkItemInFavorite = (favorite, mealId) => favorite.some(({ meal }) => meal.id === mealId);

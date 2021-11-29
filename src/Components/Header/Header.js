@@ -56,11 +56,8 @@ export default function Header() {
                         color="black"
                         aria-label="menu"
                     >
-                        <Sidebar
-                            pageWrapId={"page-wrap"}
-                            outerContainerId={"App"}
-                        />
-                        <MenuIcon menu={Sidebar} />
+                        <Sidebar />
+                        <MenuIcon/>
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>
                         Piatto
